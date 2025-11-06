@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="de" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilhan Arifi – Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: { primary: '#6366f1', secondary: '#8b5cf6' }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen">
+    <custom-navbar></custom-navbar>
+
+    <main class="container mx-auto px-4 py-12">
+        <!-- Hero Section -->
+        <section class="flex flex-col md:flex-row items-center justify-between gap-12 mb-24 animate-on-scroll">
+            <div class="md:w-1/2">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Hallo, ich bin <span class="text-primary">Ilhan Arifi</span></h1>
+                <h2 class="text-2xl md:text-3xl font-semibold text-gray-400 mb-6">B.Sc. Wirtschaftsinformatik</h2>
+                <p class="text-gray-400 mb-8 leading-relaxed">
+Im Wirtschaftsinformatik‑Studium erwarb ich fundierte Kenntnisse in digitaler Transformation, Planung und Führung. Durch Praxisprojekte sowie Erfahrung im Berufsalltag entwickelte ich eine strukturierte und lösungsorientierte Arbeitsweise — von der Analyse bis zur Umsetzung.
+</p>
+                <div class="flex gap-4">
+                    <a href="#contact" class="bg-primary hover:bg-primary-600 text-white px-6 py-3 rounded-lg transition-all">Kontakt</a>
+                    <a href="#projects" class="border border-gray-700 hover:border-primary text-primary px-6 py-3 rounded-lg transition-all">Projekte</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <div class="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-primary to-secondary rounded-full overflow-hidden">
+                        <img src="portfolio_bild.jpg" alt="Profilbild" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute -bottom-4 -right-4 bg-gray-800 p-2 rounded-full shadow-lg">
+                        <div class="bg-primary text-white p-3 rounded-full"><i data-feather="award"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="mb-24 animate-on-scroll">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="h-px bg-gray-700 flex-1"></div>
+                <h2 class="text-3xl font-bold text-center">Über mich</h2>
+                <div class="h-px bg-gray-700 flex-1"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-6 rounded-xl">
+                    <div class="bg-primary bg-opacity-10 text-primary p-3 rounded-full w-max mb-4">
+                        <i data-feather="user"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Wer bin ich?</h3>
+                    <p class="text-gray-400">
+Ich bin ein motivierter Wirtschaftsinformatiker, der komplexe Herausforderungen strukturiert analysiert und effiziente Lösungen umsetzt.
+</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl">
+                    <div class="bg-primary bg-opacity-10 text-primary p-3 rounded-full w-max mb-4">
+                        <i data-feather="target"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Meine Mission</h3>
+                    <p class="text-gray-400">
+Ich bin ein motivierter Wirtschaftsinformatiker, der komplexe Herausforderungen strukturiert analysiert und effiziente Lösungen umsetzt.
+</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl">
+                    <div class="bg-primary bg-opacity-10 text-primary p-3 rounded-full w-max mb-4">
+                        <i data-feather="bar-chart-2"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Mein Ansatz</h3>
+                    <p class="text-gray-400">
+Ich bin ein motivierter Wirtschaftsinformatiker, der komplexe Herausforderungen strukturiert analysiert und effiziente Lösungen umsetzt.
+</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="mb-24 animate-on-scroll">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="h-px bg-gray-700 flex-1"></div>
+                <h2 class="text-3xl font-bold text-center">Skills</h2>
+                <div class="h-px bg-gray-700 flex-1"></div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-gray-800 p-4 rounded-lg flex items-center gap-3"><i data-feather="code"></i><span>Java</span></div>
+                <div class="bg-gray-800 p-4 rounded-lg flex items-center gap-3"><i data-feather="database"></i><span>SQL</span></div>
+                <div class="bg-gray-800 p-4 rounded-lg flex items-center gap-3"><i data-feather="cpu"></i><span>Python</span></div>
+                <div class="bg-gray-800 p-4 rounded-lg flex items-center gap-3"><i data-feather="layers"></i><span>SAP ABAP</span></div>
+                <div class="bg-gray-800 p-4 rounded-lg flex items-center gap-3"><i data-feather="git-branch"></i><span>Scrum & Projektmanagement</span></div>
+                <div class="bg-gray-800 p-4 rounded-lg flex items-center gap-3"><i data-feather="cloud"></i><span>Web-/App Entwicklung</span></div>
+                <div class="bg-gray-800 p-4 rounded-lg flex items-center gap-3"><i data-feather="shield"></i><span>BPMN / Prozessanalyse</span></div>
+                <div class="bg-gray-800 p-4 rounded-lg flex items-center gap-3"><i data-feather="feather"></i><span>Team- & Kommunikationsfähigkeit</span></div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="mb-24 animate-on-scroll">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="h-px bg-gray-700 flex-1"></div>
+                <h2 class="text-3xl font-bold text-center">Projekte</h2>
+                <div class="h-px bg-gray-700 flex-1"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-800 rounded-xl overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Cross Platform Mensa App</h3>
+                        <p class="text-gray-400 mb-4">Entwicklung einer App, die Speisepläne mehrerer Mensen automatisch sammelt und übersichtlich darstellt.</p>
+                        <div class="flex flex-wrap gap-2 mb-4"><span class="bg-gray-700 text-sm px-3 py-1 rounded-full">JavaScript</span><span class="bg-gray-700 text-sm px-3 py-1 rounded-full">Cross Platform</span></div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-xl overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Predictive Maintenance</h3>
+                        <p class="text-gray-400 mb-4">Modell zur Vorhersage von Bauteilen, die präventiv ausgetauscht werden sollen.</p>
+                        <div class="flex flex-wrap gap-2 mb-4"><span class="bg-gray-700 text-sm px-3 py-1 rounded-full">Business Analytics</span><span class="bg-gray-700 text-sm px-3 py-1 rounded-full">Python</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="mb-24 animate-on-scroll">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="h-px bg-gray-700 flex-1"></div>
+                <h2 class="text-3xl font-bold text-center">Erfahrungen</h2>
+                <div class="h-px bg-gray-700 flex-1"></div>
+            </div>
+
+            <div class="space-y-8">
+                <div class="bg-gray-800 p-6 rounded-xl">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <h3 class="text-xl font-semibold">Servicekraft Cinemaxx Dammtor</h3>
+                        <span class="text-gray-400">Februar 2022 – Heute</span>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-400 space-y-2">
+                        <li>Veranstaltungskoordination & direkter Kundenkontakt</li>
+                        <li>Beratung zu Prozessoptimierungen (durch mein WI‑Know‑how)</li>
+                        <li>Verantwortung für Kassen- und Bestandsführung</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <h3 class="text-xl font-semibold">Tagesjobber – Zenjob</h3>
+                        <span class="text-gray-400">Okt 2021 – Jan 2022</span>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-400 space-y-2">
+                        <li>Einblicke in verschiedene betriebliche Abläufe & Prozessstrukturen</li>
+                        <li>Unterstützung organisatorischer Tätigkeiten im Tagesgeschäft</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+<!-- Contact Section -->
+<section id="contact" class="mb-12">
+  <div class="flex items-center gap-4 mb-8">
+    <div class="h-px bg-gray-700 flex-1"></div>
+    <h2 class="text-3xl font-bold text-center">Kontakt</h2>
+    <div class="h-px bg-gray-700 flex-1"></div>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-8">
+    <!-- Linke Seite: Kontaktinfos -->
+<div class="md:pl-12">
+  <h3 class="text-xl font-semibold mb-4">Kontakt Information</h3>
+  <div class="space-y-4">
+    <div class="flex items-center gap-4">
+      <div class="bg-primary bg-opacity-10 text-primary p-3 rounded-full">
+        <i data-feather="mail"></i>
+      </div>
+      <span>Ilhan.Arifi@web.de</span>
+    </div>
+    <div class="flex items-center gap-4">
+      <div class="bg-primary bg-opacity-10 text-primary p-3 rounded-full">
+        <i data-feather="phone"></i>
+      </div>
+      <span>+49 152 55950206</span>
+    </div>
+    <div class="flex items-center gap-4">
+      <div class="bg-primary bg-opacity-10 text-primary p-3 rounded-full">
+        <i data-feather="map-pin"></i>
+      </div>
+      <span>Hamburg</span>
+    </div>
+  </div>
+
+  <div class="flex gap-4 mt-8">
+    <a href="https://www.linkedin.com/in/ilhan-arifi-8ab0b029a" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="bg-gray-800 hover:bg-gray-700 p-3 rounded-full transition-all">
+      <i data-feather="linkedin"></i>
+    </a>
+
+    <a href="https://www.instagram.com/ilhan.te" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="bg-gray-800 hover:bg-gray-700 p-3 rounded-full transition-all">
+      <i data-feather="instagram"></i>
+    </a>
+  </div>
+</div>
+
+
+
+    <!-- Rechte Seite: Formular -->
+    <div>
+    <h3 class="text-xl font-semibold mb-4">Schreib mir eine Nachricht</h3>
+
+    <form action="https://formspree.io/f/mdkpqdan" method="POST" class="space-y-4">
+        <div>
+        <label class="block mb-1 font-semibold">Deine E-Mail</label>
+        <input 
+            type="email" 
+            name="email" 
+            required 
+            placeholder="z. B. name@example.com"
+            class="w-full p-3 border border-gray-700 bg-gray-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary text-white"
+        >
+        </div>
+
+        <div>
+        <label class="block mb-1 font-semibold">Nachricht</label>
+        <textarea 
+            name="message" 
+            required 
+            rows="5"
+            placeholder="Schreibe mir eine Nachricht..."
+            class="w-full p-3 border border-gray-700 bg-gray-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary text-white"
+        ></textarea>
+        </div>
+
+        <button 
+        type="submit" 
+        class="w-full bg-primary hover:bg-primary/90 text-white font-semibold px-6 py-3 rounded-lg transition-all"
+        >
+        Senden
+        </button>
+
+        <!-- Hier wird die Bestätigungsmeldung angezeigt -->
+        <p id="formMessage" class="text-green-400 mt-2 hidden"></p>
+    </form>
+    </div>
+  </div>
+</section>
+
+<script src="https://unpkg.com/feather-icons"></script>
+<script>
+  feather.replace();
+</script>
+
+
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/contact.js"></script>
+    <script src="components/navbar.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>
