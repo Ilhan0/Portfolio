@@ -3,7 +3,7 @@ class CustomNavbar extends HTMLElement {
         this.innerHTML = `
         <nav class="fixed top-0 left-0 w-full z-50 bg-gray-900 bg-opacity-90 backdrop-blur-md shadow-md">
             <div class="container mx-auto px-4 py-2 flex justify-between items-center"> <!-- Höhe reduziert -->
-                <div class="text-xl font-bold text-white">Ilhan Arifi</div> <!-- Schrift etwas kleiner -->
+                <div class="text-xl font-bold text-white">Moin!</div> <!-- Schrift etwas kleiner -->
 
                 <!-- Desktop Menu -->
                 <div class="flex space-x-6"> <!-- Abstand zwischen Links leicht reduziert -->
